@@ -1,0 +1,19 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+##        show_sql: true print sql by system.out
+#        format_sql: true
+# mem 없어도 스프링 부트가 알아서 test이면 인메모리 db 사용함
+logging:
+  level:
+    org.hibernate.SQL: debug # print sql by logger
+    org.hibernate.type: trace # parameter data trace
